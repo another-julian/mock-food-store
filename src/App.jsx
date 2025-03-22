@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import FoodCard from "./components/FoodCard";
 import { get, deletePizza } from "./services/PizzaService";
 
 const App = () => {
@@ -19,7 +20,9 @@ const App = () => {
   const handleDelete = (id) => {
     deletePizza(id)
       .then(() => {
-        setPizzas((prevPizzas) => prevPizzas.filter((pizza) => pizza.id !== id));
+        setPizzas((prevPizzas) =>
+          prevPizzas.filter((pizza) => pizza.id !== id)
+        );
       })
       .catch((err) => {
         console.error("Error deleting pizza:", err);
@@ -31,11 +34,17 @@ const App = () => {
     <div>
       <h2>Pizza Menu</h2>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <ul>
+      <ul className="food-list">
         {pizzas.map((pizza) => (
           <li key={pizza.id}>
-            name: <strong>{pizza.name}</strong> - {pizza.description} - ${pizza.price}
-            <button onClick={() => handleDelete(pizza.id)}>Delete</button>
+            <a className="ancle-card" href="">
+              <FoodCard
+                image={pizza.image}
+                name={pizza.name}
+                description={pizza.description}
+                price={pizza.price}
+              />
+            </a>
           </li>
         ))}
       </ul>

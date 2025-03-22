@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:3000/pizzas"; // Asegúrate de que este es el endpoint correcto
-const HEADERS = { "Content-Type": "application/json" }; // Headers reutilizables
+import { API_URL, HEADERS } from "../config";
 
 // 📌 Get all pizzas
 export const get = () => {
