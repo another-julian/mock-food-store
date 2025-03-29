@@ -69,6 +69,76 @@
       "description": "Spinach, ricotta cheese, garlic, and mozzarella",
       "price": 13.49,
       "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_pinach___ricotta_gaf4at.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Margherita",
+      "description": "Classic pizza with tomato, basil, and mozzarella",
+      "price": 10.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_margherita_vndyrm.jpg"
+    },
+    {
+      "id": 12,
+      "name": "BBQ Chicken",
+      "description": "Grilled chicken, BBQ sauce, red onions, and cheese",
+      "price": 14.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_bbq_chicken_keoeo7.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Pepperoni",
+      "description": "Delicious pizza with pepperoni and cheese",
+      "price": 12.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_pepperoni_zwdhgy.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Hawaiian",
+      "description": "Ham, pineapple, and mozzarella cheese",
+      "price": 11.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_hawaiian_em3lhk.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Four Cheese",
+      "description": "Mozzarella, cheddar, parmesan, and gorgonzola cheese",
+      "price": 13.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_four_cheese_r4kpfr.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Meat Lovers",
+      "description": "Pepperoni, sausage, ham, bacon, and beef",
+      "price": 15.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663690/pizza_meet_lovers_cdmyxk.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Veggie Supreme",
+      "description": "Tomatoes, bell peppers, mushrooms, olives, and onions",
+      "price": 12.49,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663690/pizza_veggie_supreme_lvyejm.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Buffalo Chicken",
+      "description": "Spicy buffalo sauce, grilled chicken, and cheese",
+      "price": 14.49,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663690/pizza_buffalo_chicken_hvso6y.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Mushroom Truffle",
+      "description": "Truffle oil, mushrooms, and parmesan cheese",
+      "price": 16.99,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663690/pizza_mushroom_truffle_nxc5tm.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Spinach & Ricotta",
+      "description": "Spinach, ricotta cheese, garlic, and mozzarella",
+      "price": 13.49,
+      "image": "https://res.cloudinary.com/dm5h3shoc/image/upload/v1742663689/pizza_pinach___ricotta_gaf4at.jpg"
     }
   ]
 }
