@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 :root {
-  --primary-color: #fb3826;
-  --secondary-color: #fbf1d9;
+  --red-color: #fb3826;
+  --beige-color: #fbf1d9;
   --bg-color: #fffdf0;
   --dark-color: #232526;
-  --gary-color: #777777;
+  --gray-color: #777777;
   --font-size: 14px;
   --font-family: "Outfit", sans-serif;
 }
@@ -17,7 +17,6 @@
 
 div#root {
   min-height: 100vh;
-  background-color: var(--bg-color);
 }
 
 html {
@@ -25,12 +24,39 @@ html {
   font-family: var(--font-family);
   color: var(--dark-color);
 }
+body {
+  background-color: var(--bg-color);
+}
 
-.food-list {
-  columns: auto 300px;
-  column-gap: 2rem;
-  padding: 1rem;
+main {
   margin: 0 auto;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: min(10vw, 100px) 0;
+
+  width: 100%;
+  text-align: center;
+}
+
+.menu-header h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: min(10vw, 6rem);
+}
+
+.menu {
+  max-width: 1600px;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+.food-list {
+  columns: 5 250px;
+  column-gap: 2rem;
 }
 
 .food-list > li {
@@ -42,12 +68,12 @@ html {
   width: 100%;
   border-radius: 24px;
   overflow: hidden;
-  background-color: var(--secondary-color);
+  background-color: var(--beige-color);
   margin-bottom: 2rem;
 }
 
 .food-card:hover {
-  transform: scale(1.02) translateY(-5px);
+  transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
 }
@@ -74,7 +100,7 @@ html {
 
 .food-card-description {
   font-size: 1rem;
-  color: var(--gary-color);
+  color: var(--gray-color);
 }
 
 .food-card-footer {
@@ -94,8 +120,8 @@ html {
   height: 3rem;
   border: none;
   border-radius: 100%;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--red-color);
+  color: var(--beige-color);
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
@@ -107,8 +133,29 @@ html {
 
 a.ancle-card {
   text-decoration: none;
+  margin: 0;
 }
 
 .ancle-card:active {
   transform: scale(0.9);
+}
+
+@media (max-width: 700px) {
+  .food-list {
+    columns: 2 auto;
+    gap: 1rem;
+  }
+  .food-card {
+    border-radius: 24px;
+    background-color: var(--beige-color);
+    margin-bottom: 1rem;
+  }
+  .food-card img {
+    height: 120px;
+  }
+  .food-card-content {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
 }

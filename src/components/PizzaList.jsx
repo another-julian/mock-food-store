@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FoodCard from "../components/FoodCard";
 import { get, deletePizza } from "../services/PizzaService";
 
-const PizzaList = () => {
+function PizzaList() {
   const [pizzas, setPizzas] = useState([]);
   const [error, setError] = useState(null);
 
@@ -31,8 +31,10 @@ const PizzaList = () => {
   };
 
   return (
-    <div>
-      <h2>Pizza Menu</h2>
+    <>
+      <div className="menu-header">
+        <h2>The best pizzas</h2>
+      </div>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <ul className="food-list">
         {pizzas.map((pizza) => (
@@ -48,8 +50,8 @@ const PizzaList = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
-};
+}
 
 export default PizzaList;
